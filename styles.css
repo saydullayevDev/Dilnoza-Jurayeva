@@ -808,13 +808,58 @@ nav {
   background: rgb(186, 113, 245);
 }
 
+/** =------------ section-3 responsive -------------=  */
+@media only screen and (min-width: 320px) {
+  #section-3 {
+    overflow-x: hidden;
+  }
+  #section-3 .left {
+    position: relative;
+    height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  #section-3 .title {
+    width: 350px;
+    font-size: 80px;
+    font-family: poppins;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+  #section-3 .subTitle {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    position: sticky;
+    margin-bottom: 100px;
+    padding: 0 10px;
+  }
+  #section-3 .right,
+  .left {
+    height: 90vh;
+  }
+  #section-3 .cards {
+    width: 90vw;
+    height: 90vw;
+  }
+  #section-3 .card {
+    width: 90vw;
+    height: 50vh;
+    padding: 30px;
+  }
+  #section-3 .content {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+}
+
 /*CSS Code for responsiveness*/
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   #section-3 .left {
     position: relative;
     width: 100vw;
   }
-}
+} */
 
 /*! =----------- section-4 ---------------- */
 /* *, *:before, *:after {
