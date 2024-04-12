@@ -844,19 +844,20 @@ nav {
     padding: 30px;
   }
   #section-3 .content {
+    font-family: poppins;
     font-size: 28px;
     font-weight: 700;
     line-height: 40px;
   }
 }
 
-/*CSS Code for responsiveness*/
-/* @media screen and (max-width: 800px) {
+CSS Code for responsiveness*/
+/* /* @media screen and (max-width: 800px) {
   #section-3 .left {
     position: relative;
     width: 100vw;
   }
-} */
+}
 
 /*! =----------- section-4 ---------------- */
 /* *, *:before, *:after {
@@ -1007,6 +1008,24 @@ If you use SASS you can shorten this one here like this:
     max-width: 42em;
   }
 }
+/** =------------ section-4 responsive -------------=  */
+@media only screen and (min-width: 320px) {
+  #section-4 .scroll-cards h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #section-4 h2 {
+    font-size: 1rem;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+  #section-4 .scroll-cards__item {
+    --offset: 0.5em;
+    top: max(16vh, 10em);
+    padding: 1em 1em;
+  }
+}
 
 /*!---------- section-5 ------------ */
 /* #section-5 {
@@ -1110,4 +1129,36 @@ input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/** =------------ section-4 responsive -------------=  */
+@media only screen and (min-width: 320px) {
+  #section-5 .boxTitle h3 {
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+  }
+  #section-5 .boxContainer .box {
+    font-size: 2rem;
+    width: 85vw;
+    margin: 60px 0;
+    padding: 10px;
+  }
+  #section-5 .boxContainer .box p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-align: center;
+  }
+  #section-5 .container {
+    width: 300px;
+  }
+  #section-5 h2 {
+    font-size: 1.5rem;
+  }
+  #section-5 .btn h5 {
+    font-size: 1.3rem;
+  }
 }
