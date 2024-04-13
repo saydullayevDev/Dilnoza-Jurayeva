@@ -646,6 +646,18 @@ nav {
   margin: 0 0 6rem 0;
   padding: 0;
 }
+#section-3 .img-box {
+  margin: 6rem 0;
+}
+#section-3 #img {
+  height: 50vh;
+}
+#section-3 #img img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
 #section-3 .text_container h2,
 h3 {
   text-align: center;
