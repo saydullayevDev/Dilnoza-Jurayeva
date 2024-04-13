@@ -515,8 +515,10 @@ nav {
     background-position: top -5px right;
   }
   .header__image {
-    min-height: max(50vh, 390px);
-    border-bottom-left-radius: 6rem;
+    /* min-height: max(50vh, 390px);
+    border-bottom-left-radius: 6rem; */
+    min-height: max(60vh, 390px);
+    border-bottom-left-radius: 4rem;
   }
   .header__content p {
     font-size: 1.5rem;
