@@ -53,121 +53,121 @@ ScrollReveal().reveal('.header .nav__links', {
 })
 
 //! =------------------- SECTION-3 ---------------------=
-let cards = document.querySelectorAll('.card')
-let stackArea = document.querySelector('.stack-area')
+// let cards = document.querySelectorAll('.card')
+// let stackArea = document.querySelector('.stack-area')
 
-function rotateCards() {
-  let angle = 0
-  cards.forEach((card) => {
-    if (card.classList.contains('active')) {
-      card.style.transform = `translate(-50%, -120vh) rotate(-48deg)`
-    } else {
-      card.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`
-      angle = angle - 10
-    }
-  })
-}
+// function rotateCards() {
+//   let angle = 0
+//   cards.forEach((card) => {
+//     if (card.classList.contains('active')) {
+//       card.style.transform = `translate(-50%, -120vh) rotate(-48deg)`
+//     } else {
+//       card.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`
+//       angle = angle - 10
+//     }
+//   })
+// }
 
-rotateCards()
+// rotateCards()
 
-window.addEventListener('scroll', () => {
-  let proportion = stackArea.getBoundingClientRect().top / window.innerHeight
-  if (proportion <= 0) {
-    let n = cards.length
-    let index = Math.ceil((proportion * n) / 2)
-    index = Math.abs(index) - 1
-    for (let i = 0; i < n; i++) {
-      if (i <= index) {
-        cards[i].classList.add('active')
-      } else {
-        cards[i].classList.remove('active')
-      }
-    }
-    rotateCards()
-  }
-})
+// window.addEventListener('scroll', () => {
+//   let proportion = stackArea.getBoundingClientRect().top / window.innerHeight
+//   if (proportion <= 0) {
+//     let n = cards.length
+//     let index = Math.ceil((proportion * n) / 2)
+//     index = Math.abs(index) - 1
+//     for (let i = 0; i < n; i++) {
+//       if (i <= index) {
+//         cards[i].classList.add('active')
+//       } else {
+//         cards[i].classList.remove('active')
+//       }
+//     }
+//     rotateCards()
+//   }
+// })
 
 //Code for responsiveness
 
-function adjust() {
-  let windowWidth = window.innerWidth
-  let left = document.querySelector('.left')
-  left.remove()
-  if (windowWidth < 800) {
-    stackArea.insertAdjacentElement('beforebegin', left)
-  } else {
-    stackArea.insertAdjacentElement('afterbegin', left)
-  }
-}
-adjust()
+// function adjust() {
+//   let windowWidth = window.innerWidth
+//   let left = document.querySelector('.left')
+//   left.remove()
+//   if (windowWidth < 800) {
+//     stackArea.insertAdjacentElement('beforebegin', left)
+//   } else {
+//     stackArea.insertAdjacentElement('afterbegin', left)
+//   }
+// }
+// adjust()
 
 //detect Resize
 
-window.addEventListener('resize', adjust)
+// window.addEventListener('resize', adjust)
 /////////
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
+// gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
-let timeln = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.boxes',
-    pin: true,
-    pinSpacing: true,
-    start: 'left-=120px left',
-    end: '+=2000',
-    scrub: 1,
-  },
-})
+// let timeln = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.boxes',
+//     pin: true,
+//     pinSpacing: true,
+//     start: 'left-=120px left',
+//     end: '+=2000',
+//     scrub: 1,
+//   },
+// })
 
-timeln.addLabel('box1')
-timeln.to('.box-1', {
-  xPercent: 0,
-  opacity: 1,
-})
+// timeln.addLabel('box1')
+// timeln.to('.box-1', {
+//   xPercent: 0,
+//   opacity: 1,
+// })
 
-timeln.from('.box-2', {
-  xPercent: 75,
-  opacity: 0,
-})
-timeln.addLabel('box2')
+// timeln.from('.box-2', {
+//   xPercent: 75,
+//   opacity: 0,
+// })
+// timeln.addLabel('box2')
 
-timeln.to(
-  '.box-1',
-  {
-    scale: 0.95,
-    xPercent: -0.5,
-    opacity: 0.5,
-  },
-  '-=0.3'
-)
+// timeln.to(
+//   '.box-1',
+//   {
+//     scale: 0.95,
+//     xPercent: -0.5,
+//     opacity: 0.5,
+//   },
+//   '-=0.3'
+// )
 
-timeln.to('.box-2', {
-  xPercent: 0,
-  opacity: 1,
-})
+// timeln.to('.box-2', {
+//   xPercent: 0,
+//   opacity: 1,
+// })
 
-timeln.from('.box-3', {
-  xPercent: 75,
-  opacity: 0,
-})
-timeln.addLabel('box3')
+// timeln.from('.box-3', {
+//   xPercent: 75,
+//   opacity: 0,
+// })
+// timeln.addLabel('box3')
 
-timeln.to(
-  '.box-2',
-  {
-    scale: 0.98,
-    xPercent: -0.4,
-    opacity: 0.6,
-  },
-  '-=0.3'
-)
+// timeln.to(
+//   '.box-2',
+//   {
+//     scale: 0.98,
+//     xPercent: -0.4,
+//     opacity: 0.6,
+//   },
+//   '-=0.3'
+// )
 
-timeln.to('.box-3', {
-  xPercent: 0,
-  opacity: 1,
-})
+// timeln.to('.box-3', {
+//   xPercent: 0,
+//   opacity: 1,
+// })
 
-timeln.to('.box-3', {})
+// timeln.to('.box-3', {})
 //////////////////////\
 
 //! section-5
@@ -188,14 +188,14 @@ function emailSend() {
   })
     .then((message) => {
       if (message == 'OK') {
-        swal('Tabriklaymiz 🎉', `Siz muvaffaqiyatli ro'yhatdan o'tdingiz ☺`)
+        swal('Tabriklaymiz 🎉', `Siz muvaffaqiyatli ro'yhatdan o'tdingiz!`)
       } else {
         swal('Xatolik ❗', `Qaytadan urinib ko'ring`)
       }
     })
     .then(() => {
       setTimeout(() => {
-        window.open('https://t.me/hojiakbar063') //! telegram Admin
+        location.href = 'https://t.me/hojiakbar063' //! telegram Admin
       }, 1000)
     })
 }

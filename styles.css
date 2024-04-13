@@ -600,13 +600,17 @@ nav {
 
 /** =------------ section-2 responsive -------------=  */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
+  #section-2 {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
   #section-2 .boxTitle {
     font-size: 1rem;
     margin-top: 2rem;
     letter-spacing: 0.1rem;
   }
   #section-2 .boxTitle .none {
-    display: block;
+    display: block !important;
   }
   #section-2 .boxTitle .block {
     display: none;
@@ -1087,6 +1091,10 @@ input[type='number']::-webkit-outer-spin-button {
 
 /** =------------ section-5 responsive -------------=  */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
+  #section-5 {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
   #section-5 .boxTitle h3 {
     font-weight: 500;
     letter-spacing: 0.1rem;
