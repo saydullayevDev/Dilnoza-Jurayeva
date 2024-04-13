@@ -63,7 +63,7 @@ function emailSend() {
     Host: 'smtp.elasticemail.com',
     Username: 'hojiakbarsaydullayev003@gmail.com',
     Password: '287E14366B538C79B2FF0DF897444D1DE0E9',
-    To: 'izzatbeksaydullayev18@gmail.com', //! sms yuboriladigan gmail
+    To: 'izzatbeksaydullayevsiu@gmail.com', //! sms yuboriladigan gmail
     From: 'hojiakbarsaydullayev003@gmail.com',
     Subject: 'Dilnoza Jurayeva vebinar',
     Body: messageBody,
