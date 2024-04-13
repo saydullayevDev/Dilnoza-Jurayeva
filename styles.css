@@ -1133,7 +1133,4 @@ input[type='number']::-webkit-outer-spin-button {
   .none {
     display: none !important;
   }
-  .block {
-    display: block !important;
-  }
 }
