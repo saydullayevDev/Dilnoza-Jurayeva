@@ -65,7 +65,7 @@ function emailSend() {
     Password: '287E14366B538C79B2FF0DF897444D1DE0E9',
     To: 'izzatbeksaydullayevsiu@gmail.com', //! sms yuboriladigan gmail
     From: 'hojiakbarsaydullayev003@gmail.com',
-    Subject: 'Dilnoza Jurayeva vebinar',
+    Subject: 'Dilnoza Djurayeva Vebinar',
     Body: messageBody,
   })
     .then((message) => {
