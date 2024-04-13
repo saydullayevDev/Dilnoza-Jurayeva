@@ -33,142 +33,24 @@ const scrollRevealOption = {
 
 ScrollReveal().reveal('.header__content h1', {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 500,
 })
 ScrollReveal().reveal('.header__content h2', {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 1000,
 })
 ScrollReveal().reveal('.header__content p', {
   ...scrollRevealOption,
-  delay: 2500,
+  delay: 1500,
 })
 ScrollReveal().reveal('.header__content div', {
   ...scrollRevealOption,
-  delay: 3000,
+  delay: 2000,
 })
 
 ScrollReveal().reveal('.header .nav__links', {
   delay: 3500,
 })
-
-//! =------------------- SECTION-3 ---------------------=
-// let cards = document.querySelectorAll('.card')
-// let stackArea = document.querySelector('.stack-area')
-
-// function rotateCards() {
-//   let angle = 0
-//   cards.forEach((card) => {
-//     if (card.classList.contains('active')) {
-//       card.style.transform = `translate(-50%, -120vh) rotate(-48deg)`
-//     } else {
-//       card.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`
-//       angle = angle - 10
-//     }
-//   })
-// }
-
-// rotateCards()
-
-// window.addEventListener('scroll', () => {
-//   let proportion = stackArea.getBoundingClientRect().top / window.innerHeight
-//   if (proportion <= 0) {
-//     let n = cards.length
-//     let index = Math.ceil((proportion * n) / 2)
-//     index = Math.abs(index) - 1
-//     for (let i = 0; i < n; i++) {
-//       if (i <= index) {
-//         cards[i].classList.add('active')
-//       } else {
-//         cards[i].classList.remove('active')
-//       }
-//     }
-//     rotateCards()
-//   }
-// })
-
-//Code for responsiveness
-
-// function adjust() {
-//   let windowWidth = window.innerWidth
-//   let left = document.querySelector('.left')
-//   left.remove()
-//   if (windowWidth < 800) {
-//     stackArea.insertAdjacentElement('beforebegin', left)
-//   } else {
-//     stackArea.insertAdjacentElement('afterbegin', left)
-//   }
-// }
-// adjust()
-
-//detect Resize
-
-// window.addEventListener('resize', adjust)
-/////////
-
-// gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
-
-// let timeln = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: '.boxes',
-//     pin: true,
-//     pinSpacing: true,
-//     start: 'left-=120px left',
-//     end: '+=2000',
-//     scrub: 1,
-//   },
-// })
-
-// timeln.addLabel('box1')
-// timeln.to('.box-1', {
-//   xPercent: 0,
-//   opacity: 1,
-// })
-
-// timeln.from('.box-2', {
-//   xPercent: 75,
-//   opacity: 0,
-// })
-// timeln.addLabel('box2')
-
-// timeln.to(
-//   '.box-1',
-//   {
-//     scale: 0.95,
-//     xPercent: -0.5,
-//     opacity: 0.5,
-//   },
-//   '-=0.3'
-// )
-
-// timeln.to('.box-2', {
-//   xPercent: 0,
-//   opacity: 1,
-// })
-
-// timeln.from('.box-3', {
-//   xPercent: 75,
-//   opacity: 0,
-// })
-// timeln.addLabel('box3')
-
-// timeln.to(
-//   '.box-2',
-//   {
-//     scale: 0.98,
-//     xPercent: -0.4,
-//     opacity: 0.6,
-//   },
-//   '-=0.3'
-// )
-
-// timeln.to('.box-3', {
-//   xPercent: 0,
-//   opacity: 1,
-// })
-
-// timeln.to('.box-3', {})
-//////////////////////\
 
 //! section-5
 // form
