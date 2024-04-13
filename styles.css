@@ -1124,7 +1124,7 @@ input[type='number']::-webkit-outer-spin-button {
     font-size: 1.3rem;
   }
   #section-5 .icons img {
-    margin: 70px 0 10px 0;
+    margin: 100px 0 10px 0;
   }
 }
 
@@ -1132,5 +1132,8 @@ input[type='number']::-webkit-outer-spin-button {
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .none {
     display: none !important;
+  }
+  .block {
+    display: block !important;
   }
 }
