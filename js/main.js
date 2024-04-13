@@ -77,7 +77,7 @@ function emailSend() {
     })
     .then(() => {
       setTimeout(() => {
-        location.href = 'https://t.me/hojiakbar063' //! telegram Admin
+        location.href = 'https://t.me/lashpro_menejer' //! telegram Admin
       }, 1000)
     })
 }
