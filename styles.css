@@ -925,8 +925,10 @@ h3 {
     font-weight: 700;
     line-height: 40px;
   }
-
-  /*  */
+  #section-3 #img img {
+    width: 90vw;
+    border-radius: 12px;
+  }
 
   #section-3 .text_container h2,
   h3 {
